@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href="prefix/main.css" type="text/css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/8f05fea051.js" crossorigin="anonymous"></script>
         <title>ohmyfood</title>
     </head>
@@ -13,51 +14,76 @@
         </header>
 
         <section>
-            <p><i class="fas fa-map-marker-alt"> Paris, Belleville</i></p>
-            <p>Book the menu you like</p>
-            <p>Discover top-of-the-art restaurants we picked for you</p>
-            <button>Explore our restaurants</button>
+            <p class="location"><i class="fas fa-map-marker-alt"> Paris, Belleville</i></p>
+            <div class="explore_restaurants">
+                <h2><strong>Book the menu you like</strong></h2>
+                <p>Discover top-of-the-art restaurants we picked for you</p>
+                <a href="index.html">
+                    <button>Explore our Restaurants</button>
+                </a>
+            </div>
         </section>
 
-        <nav>
+        <nav class="options">
             <p>How it works</p>
-            <div><i class="fas fa-mobile-alt"> Chose a restaurant</i></div>
-            <div><i class="fas fa-list"> Create your menu</i></div>
-            <div><i class="fas fa-store"> Go enjoy it at the restaurant</i></div>
+        
+            <div class="options_menu">
+                <div class="numbers">1</div>
+                <i class="fas fa-mobile-alt"> Chose a restaurant</i>
+            </div>
+
+            <div class="options_menu">
+                <div class="numbers">2</div>
+                <i class="fas fa-list"> Create your menu</i>
+            </div>
+
+            <div class="options_menu">
+                <div class="numbers">3</div>
+                <i class="fas fa-store"> Go enjoy it at the restaurant</i>
+            </div>
+            
         </nav>
 
-        <section class="restaurants">
-            <p>Restaurants</p>
+        <nav class="restaurants">
+            <h2>Restaurants</h2>
 
-            <div>
-                <img src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-                <h3><a href="fullpelette.html">The Full Pelette</a></h3>
-                <location>New York</location>
-            </div>
+            <a href="fullpelette.html">
+                <div class="card">
+                    <img src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                    <h3>The Full Pelette</h3>
+                    <p>New York</p>
+                </div>
+            </a>
 
-            <div>
-                <img src="img/stil-u2Lp8tXIcjw-unsplash.jpg">
-                <h3><a href="enchantedplate.html">The Enchanted Plate</a></h3>
-                <location>New York</location>
-            </div>
+            <a href="enchantedplate.html">
+                <div class="card">
+                    <img src="img/stil-u2Lp8tXIcjw-unsplash.jpg">
+                    <h3>The Enchanted Plate</h3>
+                    <p>New York</p>
+                </div>
+            </a>
 
-            <div>
-                <img src="img/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-                <h3><a href="bastille.html">Bastille</a></h3>
-                <location>New York</location>
-            </div>
+            <a href="bastille.html">
+                <div class="card">
+                    <img src="img/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                    <h3>Bastille</h3>
+                    <p>New York</p>
+              </div>
+            </a>
 
-            <div>
-                <img src="img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-                <h3><a href="gourmand.html">Le Gourmand</a></h3>
-                <location>New York</location>
-            </div>
-        </section>
+            <a href="gourmand.html">
+                <div class="card">
+                    <img src="img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                    <h3>Le Gourmand</h3>
+                    <p>New York</p>
+                 </div>
+            </a>
+        </nav>
 
-        <footer>
+        <footer class="contact">
             <img src="img/ohmyfood.png">
-            <p><i class="fas fa-utensils"> Suggest a restaurant</i></p>
-            <p><i class="fas fa-hands-helping"> Become a partner</i></p>
+            <p><i class="fas fa-utensils"><strong>  Suggest a restaurant</strong></i></p>
+            <p><i class="fas fa-hands-helping"><strong> Become a partner</strong></i></p>
             <p>Legal</p>
             <p>Contact</p>
         </footer>
