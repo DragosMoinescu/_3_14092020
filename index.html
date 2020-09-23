@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link href="prefix/main.css" type="text/css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/8f05fea051.js" crossorigin="anonymous"></script>
@@ -14,9 +15,9 @@
         </header>
 
         <section>
-            <p class="location"><i class="fas fa-map-marker-alt"> Paris, Belleville</i></p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
             <div class="explore_restaurants">
-                <h2><strong>Book the menu you like</strong></h2>
+                <h2>Book the menu you like</h2>
                 <p>Discover top-of-the-art restaurants we picked for you</p>
                 <a href="index.html">
                     <button>Explore our Restaurants</button>
@@ -27,38 +28,42 @@
         <nav class="options">
             <p>How it works</p>
         
-            <div class="options_menu">
-                <div class="numbers">1</div>
-                <i class="fas fa-mobile-alt"> Chose a restaurant</i>
-            </div>
-
-            <div class="options_menu">
-                <div class="numbers">2</div>
-                <i class="fas fa-list"> Create your menu</i>
-            </div>
-
-            <div class="options_menu">
-                <div class="numbers">3</div>
-                <i class="fas fa-store"> Go enjoy it at the restaurant</i>
-            </div>
             
+                <section class="options_menu">
+                    <span class="numbers">1</span>
+                    <i class="fas fa-mobile-alt"></i> Choose a restaurant
+                </section>
+
+                <section class="options_menu">
+                    <div class="numbers">2</div>
+                    <i class="fas fa-list"></i> Create your menu
+                </section>
+        
+                <section class="options_menu">
+                    <div class="numbers">3</div>
+                    <i class="fas fa-store"></i> Go enjoy it at the restaurant
+                </section>     
         </nav>
 
         <nav class="restaurants">
             <h2>Restaurants</h2>
 
             <a href="fullpelette.html">
+                <p id="new_item_menu">New</p>
                 <div class="card">
-                    <img src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-                    <h3>The Full Pelette</h3>
+                    <img src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"> 
+                    <h3>The Full Palette</h3>
+                    <i class="far fa-heart"></i>
                     <p>New York</p>
                 </div>
             </a>
 
             <a href="enchantedplate.html">
+                <p id="new_item_menu">New</p>
                 <div class="card">
                     <img src="img/stil-u2Lp8tXIcjw-unsplash.jpg">
                     <h3>The Enchanted Plate</h3>
+                    <i class="far fa-heart"></i>
                     <p>New York</p>
                 </div>
             </a>
@@ -67,7 +72,9 @@
                 <div class="card">
                     <img src="img/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
                     <h3>Bastille</h3>
+                    <i class="far fa-heart"></i>
                     <p>New York</p>
+
               </div>
             </a>
 
@@ -75,6 +82,7 @@
                 <div class="card">
                     <img src="img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
                     <h3>Le Gourmand</h3>
+                    <i class="far fa-heart"></i>
                     <p>New York</p>
                  </div>
             </a>

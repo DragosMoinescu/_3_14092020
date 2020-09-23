@@ -5,10 +5,18 @@ $lightgrey: #EEEEEE;
 $darkgrey: #757575;
 $white: #fafafa;
 $grey: #bdbdbd;
+$green:#4CAF50;
 
 * {
     box-sizing: border-box;
   }
+
+header{
+    img{
+        width:auto;
+    }
+}
+
 
 body{
     background-color: $white;
@@ -16,6 +24,13 @@ body{
     text-align: center;
     margin:auto;
     font-family: sans-serif;
+    .location{
+        font-size: 25px;
+
+        .fas{
+            padding-right: 20px;
+        }
+    }
 }
 
 button{
@@ -24,6 +39,7 @@ button{
     color: $white;
     font-size: 20px;
     padding: 22px;
+    width:15em;
 }
 
 button:hover {
@@ -35,6 +51,12 @@ button:hover {
     padding: 40px;
     p{
         padding:30px;
+        font-size: 30px;
+        color: $darkgrey;
+    }
+
+    h2{
+        font-size: 50px;
     }
 }
 
@@ -47,6 +69,7 @@ button:hover {
 
 .options{
     text-align:left;
+    padding:20px;
     p{
         font-size: 40px;
         font-weight: bold;
@@ -55,32 +78,74 @@ button:hover {
 
 .options_menu{
     border-radius: 1em;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
     padding: 30px;
     background-color: $lightgrey;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin-top:30px;
-    margin-bottom:50px;
+    margin: 30px;
+
+    .fas{
+        color:grey;
+        padding-right: 20px;
+    }
+}
+
+.options_menu:hover{
+    background-color:$secondary;
 }
 
 .numbers{
-    position:absolute;
     border-radius:50%;
     background: linear-gradient(170deg, $secondary 10%, $primary 60%);
     color: $white;
     font-size: 30px;
     width: 35px;
     text-align: center;
-    left:24em;
+    display:inline-block;
+    margin-left:-7%;
+    margin-right:15px;
 }
 
 .restaurants{
     background-color: $lightgrey;
     font: black;
     padding:20px 40px 20px 40px;
+    margin-top:40px;
+    
     p,h2,h3{
         text-align:left;
     }
+
+    a{
+        text-decoration:none;
+        color:black;
+    }
+
+    img{
+        width:100%;
+        height: 400px;
+        border-radius: 30px 30px 0px 0px;
+        object-fit: cover;
+        padding:-100px;
+        object-position: left bottom;
+    }
+    #new_item_menu{
+        color: $green;
+        background-color:$tertiary;
+        width:15%;
+        padding: 20px;
+        text-align: center;
+        position:relative;
+        z-index: auto;
+        margin: 0px 300px -70px 600px;
+    }
+}
+
+img{
+    width:100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .card{
@@ -93,17 +158,24 @@ button:hover {
     margin-bottom: 60px;
     h3{
         padding:5px 0px 0px 20px;
+        font-size: 150%;
     }
     p{
         padding:5px 0px 30px 20px;
+        font-size: 130%;
     }
-}
 
-img{
-    max-width:100%;
-    height: auto;
-    border-radius: 30px 30px 0px 0px;
-    object-fit: scale-down;
+    .far{
+        display:inline;
+        margin-right: -80%;
+        font-size: 240%;
+        border-width: 2px;
+        cursor: pointer;
+            &:hover {
+                color: $primary;
+                font-weight:900;
+           }
+    }
 }
 
 .contact{
@@ -114,7 +186,50 @@ img{
     img{
         filter: invert(100%);
         height:20px;
+        width:auto;
     }
+}
+
+.menu{
+    background-color:$lightgrey;
+    padding:40px;
+    border-radius:2em;
+    margin-top: -30px;
+    position:relative;
+    z-index: 999;
+
+    h3{
+        text-align:left;
+        margin-bottom:0;
+    }
+
+    h4{
+        text-align:left;
+        padding: 20px 0px 0px 20px;
+    }
+
+    p{
+        padding: 0px 0px 20px 20px;
+        margin-top: 0;
+    }
+
+    hr{
+        color:$tertiary;
+        width:40px;
+        text-align:left;
+        margin-left:0;
+        padding-top:0;
+    }
+    .menu_item{
+        background-color: $white;
+        border-radius: 1em;
+        text-align:left;
+    }
+}
+
+h1{
+    font-family: 'Shrikhand';
+
 }
 
 @media only screen and (max-width: 600px) {
