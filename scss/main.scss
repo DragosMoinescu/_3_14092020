@@ -13,8 +13,9 @@ $green:#4CAF50;
 
 header{
     img{
-        width:auto;
-    }
+            width:100%;
+            object-fit: scale-down;
+        }
 }
 
 
@@ -110,11 +111,22 @@ button:hover {
 .restaurants{
     background-color: $lightgrey;
     font: black;
-    padding:20px 40px 20px 40px;
+    padding:40px 40px 20px 40px;
     margin-top:40px;
+
+    h2{
+        text-align: left;
+        font-size: 50px;
+    }
     
-    p,h2,h3{
+    h3{
         text-align:left;
+    }
+
+    p{
+        text-align: left;
+        margin-top: -40px;
+        margin-left: 5px;
     }
 
     a{
@@ -138,15 +150,10 @@ button:hover {
         text-align: center;
         position:relative;
         z-index: auto;
-        margin: 0px 300px -70px 600px;
+        margin: 0px 300px -70px 650px;
     }
 }
 
-img{
-    width:100%;
-    height: auto;
-    object-fit: cover;
-}
 
 .card{
     margin: 30px 0 0 0;
@@ -194,9 +201,14 @@ img{
     background-color:$lightgrey;
     padding:40px;
     border-radius:2em;
-    margin-top: -30px;
+    margin-top: -100px;
     position:relative;
     z-index: 999;
+
+    img{
+        width:100%;
+        object-fit: cover;
+    }
 
     h3{
         text-align:left;
@@ -225,11 +237,18 @@ img{
         border-radius: 1em;
         text-align:left;
     }
+    
+    h1{
+        font-family: 'Shrikhand';
+    
+    }
 }
 
-h1{
-    font-family: 'Shrikhand';
 
+.restaurant_img{
+    img{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
