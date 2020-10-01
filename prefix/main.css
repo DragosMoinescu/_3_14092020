@@ -210,6 +210,18 @@ button:hover {
   background-color: #fafafa;
   border-radius: 1em;
   text-align: left;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 100%;
+  }
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+  }
 }
 .menu h1 {
   font-family: "Shrikhand";
@@ -238,6 +250,30 @@ footer a {
   body {
     max-width: 100%;
     height: auto;
+  }
+}
+.loadingspinner {
+  pointer-events: none;
+  width: 2.5em;
+  height: 2.5em;
+  border: 0.4em solid transparent;
+  border-color: #eee;
+  border-top-color: #3E67EC;
+  border-radius: 50%;
+  animation: hideSpin 1s normal forwards 5s, loadSpin 1s linear infinite;
+}
+
+@keyframes hideSpin {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loadSpin {
+  0% {
+    transform: rotate(360deg);
   }
 }
 
