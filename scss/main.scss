@@ -251,6 +251,26 @@ button:hover {
     }
 }
 
+footer{
+    a{
+        text-decoration:none;
+        color:white;
+    }
+}
+
+.header_pages{
+    img{
+        display:inline-block;
+        width:80%;
+    }
+        
+    i{
+        text-decoration:none;
+        color:black;
+        font-size: 35px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     body{
         max-width: 100%;
