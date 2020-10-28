@@ -126,12 +126,12 @@ button:hover {
 .restaurants #new_item_menu {
   color: #4CAF50;
   background-color: #99E2D0;
-  width: 15%;
-  padding: 20px;
+  width: 30%;
+  padding: 10px 15px;
   text-align: center;
   position: relative;
   z-index: auto;
-  margin: 0px 300px -70px 650px;
+  margin: 0px 300px -70px 300px;
 }
 
 .card {
@@ -139,7 +139,6 @@ button:hover {
   border-radius: 2em;
   background-color: #fafafa;
   max-width: 900px;
-  margin: auto;
   padding-bottom: 5px;
   margin-bottom: 60px;
 }
@@ -200,31 +199,96 @@ button:hover {
   margin-top: 0;
 }
 .menu hr {
-  color: #99E2D0;
-  width: 40px;
+  width: 80px;
   text-align: left;
   margin-left: 0;
   padding-top: 0;
+  border: 3px solid #99E2D0;
 }
 .menu .menu_item {
+  display: flex;
+  justify-content: space-between;
   background-color: #fafafa;
   border-radius: 1em;
   text-align: left;
   animation-duration: 2s;
   animation-name: slidein;
+  background-color: #EEEEEE;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 30px;
+}
+.menu .menu_item .icon_container {
+  display: none;
+  animation-delay: 2s;
+}
+.menu .menu_item .icon_rotate {
+  color: #fafafa;
+  background-color: #99E2D0;
+  border-radius: 60%;
+  animation-direction: alternate-reverse;
+  padding: 0px;
+  margin: 50% 25%;
+  animation-duration: 8s;
+}
+.menu .menu_item div:hover .icon_rotate {
+  animation: rotation 2s linear;
+  color: #fafafa;
+  background-color: #99E2D0;
+  border-radius: 100%;
 }
 @keyframes slidein {
   from {
-    margin-top: 100%;
-    width: 100%;
+    margin-top: 30%;
   }
   to {
     margin-bottom: 0%;
-    width: 100%;
   }
+}
+.menu i {
+  font-size: 70px;
+}
+.menu div {
+  border: 3px solid blue;
+  width: 75%;
+}
+.menu div h4 {
+  font-size: 35px;
+}
+.menu .description {
+  font-size: 30px;
+}
+.menu .money {
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 130px;
+  padding-right: 50px;
+  text-align: right;
+  border: 3px solid red;
+  width: 25%;
 }
 .menu h1 {
   font-family: "Shrikhand";
+}
+.menu h3 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.menu h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.menu_item:hover > .icon_container {
+  display: block;
+  background-color: #99E2D0;
+  width: 20%;
+  border-radius: 0px 1em 1em 0px;
+}
+
+.menu_item:hover > .description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .restaurant_img img {
@@ -274,6 +338,65 @@ footer a {
 @keyframes loadSpin {
   0% {
     transform: rotate(360deg);
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  body .restaurants {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  body .restaurants h2 {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 100px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.692), 0 10px 40px 0 rgba(0, 0, 0, 0.698);
+    border-radius: 1em;
+    border-style: none;
+  }
+  body .restaurants a {
+    width: 45%;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.692), 0 10px 40px 0 rgba(0, 0, 0, 0.698);
+  }
+
+  .options {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .options p {
+    font-size: 50px;
+  }
+
+  .contact {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .contact img {
+    background-image: "img/ohmyfood.png";
+    background-size: contain;
+    width: 400px;
+    height: 100px;
+  }
+  .contact p {
+    font-size: 30px;
+    text-indent: 4em;
+  }
+  .contact a {
+    font-size: 30px;
+    text-indent: 5em;
+    padding-top: 30px;
   }
 }
 
