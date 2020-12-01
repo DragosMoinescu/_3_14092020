@@ -266,7 +266,7 @@ body .numbers {
   border-radius: 1em;
   text-align: left;
   animation-duration: 4s;
-  animation-name: slidein;
+  animation-name: slideup;
   background-color: #EEEEEE;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 30px;
@@ -274,14 +274,13 @@ body .numbers {
   height: 100px;
   overflow: hidden;
 }
-@keyframes slidein {
+@keyframes slideup {
   from {
-    margin-top: 100%;
-    height: 300%;
+    margin-top: 10%;
+    opacity: 0;
   }
   to {
     margin-top: 0%;
-    height: 100%;
   }
 }
 .menu .menu_item .icon_rotate {
