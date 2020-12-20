@@ -103,7 +103,7 @@ body .numbers {
 
 .restaurants {
   background-color: #EEEEEE;
-  font: black;
+  color: black;
   padding: 40px 40px 20px 40px;
   margin-top: 40px;
 }
@@ -119,11 +119,6 @@ body .numbers {
   text-align: left;
   margin-top: -40px;
   margin-left: 5px;
-}
-.restaurants a {
-  text-decoration: none;
-  color: black;
-  display: inline-block;
 }
 .restaurants #new_item_menu {
   color: #4CAF50;
@@ -143,6 +138,9 @@ body .numbers {
   margin: auto;
   margin-bottom: 60px;
   width: 100%;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
 }
 .restaurants .card h3 {
   padding-left: 5%;
@@ -175,6 +173,8 @@ body .numbers {
 .restaurants .card div #enchanted {
   width: 100%;
   height: 210px;
+  object-fit: cover;
+  object-position: 90% 50%;
 }
 .restaurants .card div .img-cont {
   height: 5%;
@@ -390,7 +390,7 @@ footer a {
   color: white;
 }
 
-@media only screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1024px) and (orientation: portrait) {
   body {
     display: flex;
     flex-direction: row;
@@ -404,59 +404,189 @@ footer a {
   body .logo {
     margin: 0 auto;
   }
+  body .header_pages .fas {
+    font-size: 300%;
+  }
   body .menu_entry {
     width: 100%;
+  }
+  body .menu_entry .explore_restaurants {
+    width: 100%;
+    padding: 2%;
+  }
+  body .menu_entry .explore_restaurants h2, body .menu_entry .explore_restaurants p, body .menu_entry .explore_restaurants a {
+    margin: 2% 0;
+    padding: 0;
+  }
+  body .menu_entry .explore_restaurants a button {
+    margin: 0;
+  }
+  body .options {
+    display: block;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+  body .options p {
+    text-align: center;
+    font-size: 3rem;
+    margin: 3%;
+    font-family: "Shrikhand";
+  }
+  body .options .how_wrapper {
+    display: flex;
+  }
+  body .options .how_wrapper .options_menu {
+    width: 100%;
+    text-align: center;
+    margin: 2%;
+    padding: 0;
+  }
+  body .options .how_wrapper .options_menu #choice {
+    padding: 0;
+  }
+  body .options .how_wrapper .options_menu .numbers {
+    margin-top: 20px;
   }
   body .restaurants {
     text-align: center;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: space-around;
+    margin-top: 0;
   }
   body .restaurants h2 {
     text-align: center;
     width: 100%;
-    padding: 10px;
-    font-size: 100px;
+    padding: 2%;
+    font-size: 90px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.692), 0 10px 40px 0 rgba(0, 0, 0, 0.698);
     border-radius: 1em;
     border-style: none;
+    font-family: "Shrikhand";
   }
-  body .restaurants a {
-    width: 45%;
+  body .restaurants .card {
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.692), 0 10px 40px 0 rgba(0, 0, 0, 0.698);
+    width: 40%;
   }
-
-  .options {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border: 2px solid red;
+  body .restaurants .card .far {
+    bottom: 10px;
+  }
+  body .menu {
     width: 100%;
   }
-  .options p {
+  body .menu h1 {
+    font-size: 400%;
+  }
+  body .menu .far {
+    margin-top: -45px;
     font-size: 50px;
+  }
+  body .menu .menu_section {
+    display: flex;
+    flex-direction: column;
+  }
+  body .menu .menu_section h3 {
+    font-size: 160%;
+  }
+  body .menu .menu_section .menu_item {
+    width: 100%;
+  }
+  body .menu .menu_section .menu_item h4 {
+    font-size: 190%;
+  }
+  body .menu .menu_section .menu_item h3 {
+    font-size: 160%;
+  }
+  body .menu .menu_section .menu_item p {
+    font-size: 150%;
+  }
+  body .menu .menu_section .money {
+    margin: 0;
   }
 
   .contact {
     width: 100%;
-    display: flex;
     flex-direction: row;
-    align-content: space-evenly;
+    text-align: unset;
+  }
+  .contact .div_wrap {
+    display: flex;
+    justify-content: space-around;
   }
   .contact img {
-    background-image: "img/ohmyfood.png";
-    background-size: contain;
-    width: 400px;
-    height: 100px;
+    width: 75%;
+    height: unset;
   }
   .contact p {
     font-size: 30px;
-    text-indent: 4em;
   }
   .contact a {
     font-size: 30px;
-    text-indent: 5em;
-    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+    max-width: none;
+  }
+  body .logo img {
+    object-fit: contain;
+    width: 30%;
+  }
+  body .menu_entry {
+    padding: 0;
+    width: 100%;
+  }
+  body .menu_entry .explore_restaurants {
+    padding: 2%;
+  }
+  body .menu_entry button {
+    margin: 0;
+  }
+  body .options {
+    border-radius: 1em;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 0;
+    text-align: unset;
+  }
+  body .options .fas {
+    color: grey;
+    padding-right: 10px;
+  }
+  body .options .how_wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    height: 100px;
+  }
+  body .options .how_wrapper .options_menu {
+    margin-bottom: initial;
+    padding: 3%;
+  }
+  body .options .restaurants {
+    text-align: unset;
+    width: 100%;
+  }
+  body .options .restaurants h2 {
+    text-align: 0;
+    font-size: 400px;
+  }
+
+  .contact {
+    text-align: unset;
+  }
+  .contact img {
+    width: 70%;
+    height: 100%;
+  }
+  .contact p {
+    font-size: 30px;
+  }
+  .contact a {
+    font-size: 30px;
   }
 }
