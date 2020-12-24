@@ -529,6 +529,26 @@ footer a {
   body {
     width: 100%;
     max-width: none;
+    padding: 0;
+  }
+  body .header_pages {
+    padding: 0;
+  }
+  body .header_pages img {
+    object-fit: contain;
+    width: 30%;
+  }
+  body .header_pages .fas {
+    font-size: 300%;
+  }
+  body .r_img {
+    height: 900px;
+    object-fit: none;
+    object-position: 40% 65%;
+  }
+  body #enchant_img {
+    height: 900px;
+    object-position: 40% 60%;
   }
   body .logo img {
     object-fit: contain;
@@ -548,7 +568,6 @@ footer a {
     border-radius: 1em;
     font-size: 20px;
     font-weight: bold;
-    padding: 0;
     margin-bottom: 0;
     text-align: unset;
   }
@@ -557,36 +576,87 @@ footer a {
     padding-right: 10px;
   }
   body .options .how_wrapper {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 0%;
-    height: 100px;
+    justify-content: space-around;
   }
   body .options .how_wrapper .options_menu {
     margin-bottom: initial;
-    padding: 3%;
+    padding: 2%;
   }
-  body .options .restaurants {
+  body .restaurants {
     text-align: unset;
     width: 100%;
   }
-  body .options .restaurants h2 {
-    text-align: 0;
-    font-size: 400px;
+  body .restaurants .card {
+    width: 20%;
+    height: 100%;
+    margin: 1%;
+    margin-bottom: 3%;
   }
-
-  .contact {
+  body .restaurants .card .far {
+    bottom: 10px;
+  }
+  body .restaurants h2 {
+    text-align: center;
+    font-family: "Shrikhand";
+    font-size: 440%;
+    margin: 0;
+  }
+  body .menu_wrapper {
+    display: flex;
+    padding: 0 2%;
+    justify-content: space-between;
+  }
+  body .menu_wrapper .menu_section {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+  body .menu_wrapper .menu_section h3 {
+    white-space: nowrap;
+  }
+  body .menu h1 {
+    text-align: center;
+    font-size: 400%;
+  }
+  body .menu .far {
+    margin-top: -3%;
+    font-size: 40px;
+  }
+  body .menu button {
+    margin: 3%;
+  }
+  body .contact {
     text-align: unset;
   }
-  .contact img {
-    width: 70%;
+  body .contact img {
+    width: 30%;
     height: 100%;
   }
-  .contact p {
-    font-size: 30px;
+  body .contact p {
+    font-size: 250%;
+    margin: 32px 8%;
+    white-space: nowrap;
   }
-  .contact a {
-    font-size: 30px;
+  body .contact a {
+    font-size: 250%;
+    margin: 0 30%;
+    white-space: nowrap;
+  }
+  body .contact .div_wrap {
+    display: flex;
+    flex-direction: row;
+  }
+  body .contact .div_wrap div {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+  }
+  body .contact .div_wrap div a {
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
