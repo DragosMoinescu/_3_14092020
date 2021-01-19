@@ -27,14 +27,12 @@ body{
 
     header{
         .loader {
-            margin-left: -15%;
-            text-indent: -9999em;
-            width: 150px;
-            height: 150px;
+            width: 40vw;
+            height: 40vw;
             border-radius: 50%;
             background-color: $grey;
             position: fixed;
-            left:50%;
+            left:30vw;
             top:10%;
             animation: load3 3s linear;
             animation-fill-mode:forwards;
@@ -43,7 +41,7 @@ body{
         .loader:before {
             width: 50%;
             height: 50%;
-            background: $grey;
+            background: $white;
             border-radius: 100% 0 0 0;
             position: absolute;
             top: 0;
@@ -72,10 +70,11 @@ body{
                 100% {
                 transform: rotate(1440deg);
                 opacity:0;
+                z-index:-5;
             }
         }
-
     }
+
     .r_img{
         width:100%;
     }
@@ -552,14 +551,12 @@ footer{
 
         header{
             .loader{
-                margin-left: -5%;
-                text-indent: -9999em;
-                width: 100px;
-                height:100px;
+                width: 40%;
+                height:305px;
                 border-radius: 50%;
                 background-color: $grey;
                 position: fixed;
-                left:50%;
+                left:30%;
                 top:10%;
                 animation: load3 3s linear;
                 animation-fill-mode:forwards;
@@ -605,8 +602,12 @@ footer{
                     text-align:center;
                     margin:2%;
                     padding:0;
+
+                    .icon-size{
+                        width:50px;
+                    }
                     
-                    #choice{
+                    .choice{
                         padding:0;
                     }
 
@@ -727,14 +728,12 @@ footer{
 
         header{
             .loader{
-                margin-left: -4%;
-                text-indent: -9999em;
-                width: 200px;
-                height:200px;
+                width: 40vw;
+                height:40vw;
                 border-radius: 50%;
                 background-color: $lightgrey;
                 position: fixed;
-                left:50%;
+                left:30%;
                 top:10%;
                 animation: load3 3s linear;
                 animation-fill-mode:forwards;
@@ -810,6 +809,10 @@ footer{
 
                 .far{
                     bottom: 10px;
+                }
+
+                h3{
+                    font-size:20px;
                 }
             }
             

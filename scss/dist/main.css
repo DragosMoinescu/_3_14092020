@@ -15,14 +15,12 @@ body {
   font-family: sans-serif;
 }
 body header .loader {
-  margin-left: -15%;
-  text-indent: -9999em;
-  width: 150px;
-  height: 150px;
+  width: 40vw;
+  height: 40vw;
   border-radius: 50%;
   background-color: #bdbdbd;
   position: fixed;
-  left: 50%;
+  left: 30vw;
   top: 10%;
   animation: load3 3s linear;
   animation-fill-mode: forwards;
@@ -30,7 +28,7 @@ body header .loader {
 body header .loader:before {
   width: 50%;
   height: 50%;
-  background: #bdbdbd;
+  background: #fafafa;
   border-radius: 100% 0 0 0;
   position: absolute;
   top: 0;
@@ -57,6 +55,7 @@ body header .loader:after {
   100% {
     transform: rotate(1440deg);
     opacity: 0;
+    z-index: -5;
   }
 }
 body .r_img {
@@ -450,14 +449,12 @@ footer a {
     margin: 0 auto;
   }
   body header .loader {
-    margin-left: -5%;
-    text-indent: -9999em;
-    width: 100px;
-    height: 100px;
+    width: 40%;
+    height: 305px;
     border-radius: 50%;
     background-color: #bdbdbd;
     position: fixed;
-    left: 50%;
+    left: 30%;
     top: 10%;
     animation: load3 3s linear;
     animation-fill-mode: forwards;
@@ -497,7 +494,10 @@ footer a {
     margin: 2%;
     padding: 0;
   }
-  body .options .how_wrapper .options_menu #choice {
+  body .options .how_wrapper .options_menu .icon-size {
+    width: 50px;
+  }
+  body .options .how_wrapper .options_menu .choice {
     padding: 0;
   }
   body .options .how_wrapper .options_menu .numbers {
@@ -588,14 +588,12 @@ footer a {
     animation-duration: 3s;
   }
   body header .loader {
-    margin-left: -4%;
-    text-indent: -9999em;
-    width: 200px;
-    height: 200px;
+    width: 40vw;
+    height: 40vw;
     border-radius: 50%;
     background-color: #EEEEEE;
     position: fixed;
-    left: 50%;
+    left: 30%;
     top: 10%;
     animation: load3 3s linear;
     animation-fill-mode: forwards;
@@ -656,6 +654,9 @@ footer a {
   }
   body .restaurants .card .far {
     bottom: 10px;
+  }
+  body .restaurants .card h3 {
+    font-size: 20px;
   }
   body .restaurants h2 {
     text-align: center;
