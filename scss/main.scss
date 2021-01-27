@@ -10,11 +10,11 @@ $dark: #424242;
 
 * {
     box-sizing: border-box;
-  }
+}
+
 header{
     img{
-            width:50%;
-            object-fit: scale-down;
+        font-size: 40px;
     }
 }
 
@@ -24,6 +24,12 @@ body{
     text-align: center;
     margin:auto;
     font-family: sans-serif;
+
+    .r_img{
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+    }
 
     header{
         .loader {
@@ -75,11 +81,8 @@ body{
         }
     }
 
-    .r_img{
-        width:100%;
-    }
-
     .menu_entry{
+
         h2{
             font-size: 30px;
         }
@@ -90,6 +93,7 @@ body{
     }
 
     .location{
+
         font-size: 22px;
 
         .fas{
@@ -104,12 +108,12 @@ body{
         font-size: 20px;
         padding: 22px;
         width:15em;
-        margin: 10%;
+        margin:0 auto;
     }
     
     button:hover {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-      }
+    }
     
     .explore_restaurants{
         background-color: $lightgrey;
@@ -136,6 +140,7 @@ body{
     .options{
         text-align:left;
         padding:20px;
+
         p{
             font-size: 30px;
             font-weight: bold;
@@ -176,7 +181,6 @@ body{
         width: 35px;
         text-align: center;
         display:inline-block;
-        // margin-left:-5.5%;
         margin-left:-50px;
         margin-right:15px;
     }    
@@ -247,10 +251,11 @@ body{
             bottom: 45px;
             cursor: pointer;
             font-weight:lighter;
-                &:hover {
+
+            &:hover{
                     color: $primary;
                     font-weight:900;
-               }
+            }
         }
     
         div{
@@ -280,15 +285,14 @@ body{
 
 .header_pages{
     display:inline-block;
-    width:100%;
     padding: 2%;
-    
-i{
-    color:black;
-    font-size: 25px;
-    position:relative;
-    margin-left: -20%;
-}
+
+    i{
+        color:black;
+        font-size: 50px;
+        position:relative;
+        padding-right:40px;
+    }
 }
 
 #enchant_img{
@@ -352,7 +356,7 @@ i{
             &:hover {
                 color: $primary;
                 font-weight:900;
-           }
+            }
     }
 
     hr{
@@ -383,11 +387,11 @@ i{
             from {
                 margin-top: 10%;
                 opacity: 0;
-              }
+            }
             
-              to {
+            to {
                 margin-top: 0%;
-              }
+            }
         }
 
         .icon_rotate{
@@ -458,15 +462,15 @@ i{
     .menu_item:hover{
 
         .menu_dishes{
+            white-space: nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
+
             .description{
                 white-space: nowrap;
                 overflow:hidden;
                 text-overflow: ellipsis;
             }
-            white-space: nowrap;
-            overflow:hidden;
-            text-overflow: ellipsis;
-            
         }
 
         .icon_container{
@@ -599,7 +603,8 @@ footer{
                 display:flex;
     
                 .options_menu{
-                    width:100%;
+                    width:30%;
+                    flex:none;
                     text-align:center;
                     margin:2%;
                     padding:0;
@@ -614,6 +619,19 @@ footer{
 
                     .numbers{
                         margin-top:20px;
+                    }
+
+                    
+                    #first-num{
+                        margin-left: -27%;
+                    }
+
+                    #second-num{
+                        margin-left: -16%;
+                    }
+
+                    #third-num{
+                        margin-left: -9%;
                     }
                 }
             }
@@ -721,6 +739,7 @@ footer{
 }
 
 @media screen and (min-width: 1024px){
+
     body{
         width: 100%;
         max-width:none;
@@ -739,10 +758,16 @@ footer{
                 animation: load3 3s linear;
                 animation-fill-mode:forwards;
             }
+
+            img{
+                width: 70%;
+                height: 100%;
+            }
         }
 
         .r_img{
             height:900px;
+            width:100%;
             object-fit:none;
             object-position:40% 65%;
         }
@@ -779,7 +804,6 @@ footer{
             margin-bottom:0;
             text-align: unset;
         
-    
             .fas{
                 color:grey;
                 padding-right: 10px;
@@ -794,6 +818,18 @@ footer{
                 .options_menu{
                     margin-bottom: initial;
                     padding:2%;
+
+                    #first-num{
+                        margin-left: -40%;
+                    }
+                
+                    #second-num{
+                        margin-left: -40%;
+                    }
+                
+                    #third-num{
+                        margin-left: -30%;
+                    }
                 }
             }
         }
